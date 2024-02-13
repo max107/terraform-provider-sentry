@@ -43,6 +43,7 @@ func resourceSentryOrganizationMember() *schema.Resource {
 					[]string{
 						"billing",
 						"member",
+						"admin",
 						"manager",
 						"owner",
 					},
