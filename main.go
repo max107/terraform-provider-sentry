@@ -10,6 +10,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server"
 	"github.com/hashicorp/terraform-plugin-mux/tf5to6server"
 	"github.com/hashicorp/terraform-plugin-mux/tf6muxserver"
+
 	"github.com/jianyuan/terraform-provider-sentry/internal/pkg/must"
 	"github.com/jianyuan/terraform-provider-sentry/internal/provider"
 	"github.com/jianyuan/terraform-provider-sentry/sentry"
@@ -60,7 +61,7 @@ func main() {
 	}
 
 	err = tf6server.Serve(
-		"registry.terraform.io/jianyuan/sentry",
+		"registry.terraform.io/max107/sentry",
 		muxServer.ProviderServer,
 		serveOpts...,
 	)
